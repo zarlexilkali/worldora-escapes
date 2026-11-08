@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover extraordinary destinations and plan your next holiday with Worldora Escapes. Worldwide vacation planning, hotels, resorts and travel experiences.">
+  <title>Worldora Escapes | Explore More. Experience More.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#101f35;--navy2:#172c47;--gold:#c8a96b;--cream:#f7f5f0;--ink:#1c2735;--muted:#687486}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+    header{position:absolute;z-index:5;top:0;left:0;width:100%;color:#fff;border-bottom:1px solid #ffffff30}
+    .nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-family:'Playfair Display',serif;font-size:23px;letter-spacing:.5px;font-weight:700}.brand span{display:block;font:10px 'DM Sans',sans-serif;letter-spacing:4px;color:var(--gold);margin-top:3px}
+    nav{display:flex;gap:27px;font-size:13px;color:#f4f4f4}nav a:hover{color:var(--gold)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#142238;padding:13px 20px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:.2px;border:0;cursor:pointer}
+    .hero{min-height:730px;height:92vh;max-height:900px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(8,20,36,.78),rgba(8,20,36,.23)),url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2200&q=85') center/cover}
+    .hero-copy{padding-top:90px;max-width:700px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+    h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600}h1{font-size:clamp(48px,7vw,82px);line-height:1.04;margin:20px 0}h1 em{color:var(--gold);font-style:normal}
+    .hero p{max-width:540px;color:#e3e8ef;line-height:1.8;font-size:16px;margin-bottom:30px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .btn-outline{border:1px solid #ffffffa8;color:#fff;padding:13px 20px;border-radius:3px;font-size:13px;font-weight:600}
+    .trustbar{background:var(--navy);color:#fff}.trustgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:24px 0;text-align:center}.trustgrid strong{display:block;font-family:'Playfair Display',serif;font-size:19px;color:var(--gold)}.trustgrid span{font-size:11px;color:#d1d8e1;letter-spacing:1px;text-transform:uppercase}
+    section{padding:94px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.section-head h2{font-size:clamp(34px,4vw,48px);margin:12px 0}.section-head p{color:var(--muted);line-height:1.8}
+    .destinations{background:var(--cream)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;box-shadow:0 12px 35px #13233b12}.card img{width:100%;height:250px;object-fit:cover;display:block}.card-body{padding:22px}.card-body small{color:#9a7b45;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;font-size:10px}.card h3{font-size:25px;margin:8px 0}.card p{font-size:13px;color:var(--muted);line-height:1.7;margin:0}
+    .aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.aboutpic{height:510px;object-fit:cover;width:100%}.aboutcopy h2{font-size:46px;line-height:1.1;margin:14px 0 20px}.aboutcopy p{color:var(--muted);line-height:1.9;font-size:14px}.features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:25px}.feature{border-left:2px solid var(--gold);padding-left:13px;font-weight:700;font-size:13px}
+    .services{background:var(--navy);color:#fff}.services .section-head p{color:#c6cfdb}.servicegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.service{border:1px solid #ffffff25;padding:25px 20px;min-height:175px}.service b{font-size:24px;color:var(--gold)}.service h3{font-size:20px;margin:17px 0 8px}.service p{font-size:12px;color:#c6cfdb;line-height:1.7}
+    .booking{background:var(--cream)}.formbox{max-width:850px;margin:auto;background:#fff;padding:35px;box-shadow:0 15px 45px #13233b12}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}.field input,.field select,.field textarea{width:100%;padding:13px;border:1px solid #dce1e7;background:#fff;font:14px 'DM Sans',sans-serif;border-radius:2px}.field.full{grid-column:1/-1}.field textarea{min-height:105px;resize:vertical}.formbox .btn{margin-top:20px;width:100%}.formnote{font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}
+    .contact{background:#fff}.contactpanel{background:var(--navy2);color:#fff;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contactpanel h2{font-size:37px;margin:10px 0}.contactpanel p{color:#d4dce5;line-height:1.7;max-width:520px}.contactlinks{display:flex;gap:12px;flex-wrap:wrap}.contactlinks a{border:1px solid #ffffff65;padding:13px 16px;font-size:13px;border-radius:2px}.contactlinks a:hover{background:var(--gold);color:var(--navy)}
+    footer{background:#0b1728;color:#d6dce4;padding:30px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.foot strong{font-family:'Playfair Display',serif;color:#fff;font-size:18px}
+    @media(max-width:800px){nav{display:none}.hero{min-height:690px;height:85vh}.cards{grid-template-columns:1fr 1fr}.aboutgrid{grid-template-columns:1fr;gap:30px}.aboutpic{height:360px}.servicegrid{grid-template-columns:1fr 1fr}.contactpanel{display:block}.contactlinks{margin-top:22px}}
+    @media(max-width:540px){.nav{height:72px}.brand{font-size:19px}.nav-cta{padding:11px 13px;font-size:11px}.hero{min-height:650px}.hero p{font-size:14px}.trustgrid{grid-template-columns:1fr;gap:12px}.trustgrid strong{font-size:17px}section{padding:70px 0}.cards,.servicegrid,.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.formbox{padding:22px}.contactpanel{padding:30px 23px}.contactpanel h2{font-size:31px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#">WORLDORA ESCAPES<span>TRAVEL · DISCOVER · EXPERIENCE</span></a>
+  <nav><a href="#destinations">Destinations</a><a href="#about">About</a><a href="#services">Services</a><a href="#booking">Enquire</a><a href="#contact">Contact</a></nav>
+  <a class="nav-cta" href="#booking">Plan your escape</a>
+</div></header>
+<main>
+  <section class="hero"><div class="wrap hero-copy">
+    <div class="eyebrow">Your world, beautifully explored</div>
+    <h1>Go beyond<br>the <em>ordinary.</em></h1>
+    <p>From unforgettable city breaks to peaceful island retreats, Worldora Escapes helps you plan meaningful journeys and extraordinary holidays across the globe.</p>
+    <div class="hero-actions"><a class="btn" href="#booking">Start planning your trip</a><a class="btn-outline" href="#destinations">Explore destinations</a></div>
+  </div></section>
+  <div class="trustbar"><div class="wrap trustgrid"><div><strong>Worldwide</strong><span>Destinations to discover</span></div><div><strong>Made around you</strong><span>Travel plans shaped to your needs</span></div><div><strong>Personal support</strong><span>Human help with your enquiry</span></div></div></div>
+  <section class="destinations" id="destinations"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Find your somewhere</div><h2>Places that stay with you.</h2><p>Whether you dream of turquoise waters, vibrant cities or dramatic landscapes, your next story starts with a destination.</p></div>
+    <div class="cards">
+      <article class="card"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80" alt="Tropical island resort"><div class="card-body"><small>Island escapes</small><h3>Maldives</h3><p>Slow down in clear blue waters, overwater villas and serene island surroundings.</p></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="Paris city view"><div class="card-body"><small>City discoveries</small><h3>Paris</h3><p>Discover celebrated architecture, memorable dining and timeless city charm.</p></div></article>
+      <article class="card"><img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=900&q=80" alt="Bali tropical landscape"><div class="card-body"><small>Culture & nature</small><h3>Bali</h3><p>Find lush scenery, restorative retreats and rich cultural experiences.</p></div></article>
+    </div>
+  </div></section>
+  <section id="about"><div class="wrap aboutgrid">
+    <img class="aboutpic" src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1100&q=85" alt="Traveller overlooking a beautiful landscape">
+    <div class="aboutcopy"><div class="eyebrow">The Worldora approach</div><h2>Every journey deserves a thoughtful beginning.</h2><p>Worldora Escapes is a travel and vacation brand built around helping people explore the world with confidence. Tell us what you have in mind, and our team will follow up to discuss options that fit your travel plans.</p><p>From flights and stays to holiday packages and local experiences, we're here to help you bring the details together.</p><div class="features"><div class="feature">Worldwide travel enquiries</div><div class="feature">Holiday and resort ideas</div><div class="feature">Personalised trip planning</div><div class="feature">Friendly follow-up support</div></div></div>
+  </div></section>
+  <section class="services" id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What we can help with</div><h2>One world. Many ways to explore.</h2><p>Share the kind of trip you're planning. We'll review your enquiry and get back to you with next steps.</p></div>
+    <div class="servicegrid">
+      <div class="service"><b>✈</b><h3>Flights</h3><p>Enquire about flight options for your preferred route and dates.</p></div>
+      <div class="service"><b>⌂</b><h3>Hotels & resorts</h3><p>Explore accommodation ideas for relaxing or city-centre stays.</p></div>
+      <div class="service"><b>✧</b><h3>Holiday packages</h3><p>Ask about tailored breaks, honeymoons and family holidays.</p></div>
+      <div class="service"><b>◎</b><h3>Tours & experiences</h3><p>Discover sightseeing, activities and memorable local experiences.</p></div>
+    </div>
+  </div></section>
+  <section class="booking" id="booking"><div class="wrap"><div class="section-head"><div class="eyebrow">Let's plan your next escape</div><h2>Send us a travel enquiry.</h2><p>Tell us a little about your plans. This form prepares an email to our team; your trip is not booked until details are confirmed with you.</p></div>
+    <form class="formbox" id="enquiryForm">
+      <div class="formgrid">
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" required placeholder="Your name"></div>
+        <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label for="destination">Destination</label><input id="destination" name="destination" required placeholder="Where would you like to go?"></div>
+        <div class="field"><label for="service">What do you need?</label><select id="service" name="service"><option>Holiday package</option><option>Flights</option><option>Hotel or resort</option><option>Tours and experiences</option><option>Airport transfer</option><option>Other travel enquiry</option></select></div>
+        <div class="field"><label for="departure">Departure date</label><input id="departure" name="departure" type="date"></div>
+        <div class="field"><label for="return">Return date</label><input id="return" name="return" type="date"></div>
+        <div class="field"><label for="travellers">Number of travellers</label><input id="travellers" name="travellers" type="number" min="1" value="1"></div>
+        <div class="field"><label for="budget">Approximate budget</label><input id="budget" name="budget" placeholder="Optional"></div>
+        <div class="field full"><label for="message">Tell us more</label><textarea id="message" name="message" placeholder="Share any preferences or questions..."></textarea></div>
+      </div>
+      <button class="btn" type="submit">Send booking enquiry</button>
+      <div class="formnote">Submitting opens your email app with your enquiry details addressed to pshtmanagement@gmail.com. No payment is taken and no reservation is made by this form.</div>
+    </form>
+  </div></section>
+  <section class="contact" id="contact"><div class="wrap"><div class="contactpanel">
+    <div><div class="eyebrow">We're here to help</div><h2>Your next journey starts here.</h2><p>Have a question or prefer to speak with us directly? Reach Worldora Escapes by email or Telegram.</p></div>
+    <div class="contactlinks"><a href="mailto:pshtmanagement@gmail.com">Email our team</a><a href="https://t.me/WorldoraEscapes" target="_blank" rel="noopener">Chat on Telegram</a></div>
+  </div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>WORLDORA ESCAPES</strong><br>Explore More. Experience More.</div><div>© <span id="year"></span> Worldora Escapes. All rights reserved.</div></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const d = new FormData(this);
+    const subject = encodeURIComponent('Worldora Escapes – Travel Enquiry');
+    const body = encodeURIComponent(
+      `New travel enquiry\\n\\nName: ${d.get('name')}\\nCustomer email: ${d.get('email')}\\nDestination: ${d.get('destination')}\\nService: ${d.get('service')}\\nDeparture: ${d.get('departure') || 'Not specified'}\\nReturn: ${d.get('return') || 'Not specified'}\\nTravellers: ${d.get('travellers') || 'Not specified'}\\nBudget: ${d.get('budget') || 'Not specified'}\\n\\nMore details:\\n${d.get('message') || 'None'}`
+    );
+    window.location.href = `mailto:pshtmanagement@gmail.com?subject=${subject}&body=${body}`;
+  });
+</script>
+</body>
+</html>
